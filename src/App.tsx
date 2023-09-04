@@ -1,14 +1,16 @@
 import React from 'react';
-
+import { Header }  from './components/Header';
+import { Baner } from './components/Baner';
 import './App.css';
+import { TextWithImage } from './components/TextWithImage'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <p>Aplikacja</p>
-      </header>
-    </div>
+    <>
+      <Header></Header>
+      <Baner></Baner>
+      <TextWithImage></TextWithImage>
+    </>
   );
 }
 

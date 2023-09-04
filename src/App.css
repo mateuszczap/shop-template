@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding-left: 72px;
+  padding-right: 204px;
+  background: #E7E4DD;
 }
-
-.App-link {
-  color: #61dafb;
+.naviagtionHeader {
+  display: flex;
+  gap: 56px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.background-img {
+  background: url(/public/table.png);
+  /* width: 1920px; */
+  height: 690px;
+  max-width: 1920px;
+  max-height: 1920px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 30%;
+  color: #ffffff;
+  gap: 20px;
+}
+.button {
+  background-color: transparent;
+  color: #ffffff;
+  border:  2px ridge #ffffff;
+  padding: 16px 32px;
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: 600;
+}
+.wood-photo {
+  background-image: url(/public/tree.jpg);
 }
