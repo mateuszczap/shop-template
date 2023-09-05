@@ -5,6 +5,13 @@ function TextWithImage () {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga itaque doloribus eos impedit inventore labore, nemo sed excepturi eaque debitis soluta quaerat laudantium libero dignissimos. Rem cumque consectetur aperiam. Autem!     
             </div>
             <div className="wood-img"></div>
+            <div className="about-me">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga itaque doloribus eos impedit inventore labore, nemo sed excepturi eaque debitis soluta quaerat laudantium libero dignissimos. Rem cumque consectetur aperiam. Autem!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga itaque doloribus eos impedit inventore labore, nemo sed excepturi eaque debitis soluta quaerat laudantium libero dignissimos. Rem cumque consectetur aperiam. Autem!</div>
+            <div className="about-me">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga itaque doloribus eos impedit inventore labore, nemo sed excepturi eaque debitis soluta quaerat laudantium libero dignissimos. Rem cumque consectetur aperiam. Autem!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga itaque doloribus eos impedit inventore labore, nemo sed excepturi eaque debitis soluta quaerat laudantium libero dignissimos. Rem cumque consectetur aperiam. Autem!</div>
+            <div className="wood-img"></div>
+            <div className="about-me">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga itaque doloribus eos impedit inventore labore, nemo sed excepturi eaque debitis soluta quaerat laudantium libero dignissimos. Rem cumque consectetur aperiam. Autem!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga itaque doloribus eos impedit inventore labore, nemo sed excepturi eaque debitis soluta quaerat laudantium libero dignissimos. Rem cumque consectetur aperiam. Autem!</div>
         </div>
     )
 }

@@ -35,19 +35,19 @@
 }
 .bottom-container-img {
   background: #E7E4DD;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, 300px); 
+  gap: 20px; 
 }
 .wood-img {
   background: url(/public/tree.jpg);
-  height: 400px;
+  height: 250px;
+  width: 250px;
   background-size: cover;
-  background-position: center;
-  flex: 1;
-  padding: 100px;
+  display: flex;
 }
 .about-me {
-  flex: 1;
-  padding: 100px;
+  display: flex;
+  align-items: center;
 }
