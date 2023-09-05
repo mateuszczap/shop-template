@@ -12,7 +12,6 @@
 }
 .background-img {
   background: url(/public/table.png);
-  /* width: 1920px; */
   height: 690px;
   max-width: 1920px;
   max-height: 1920px;
@@ -34,6 +33,21 @@
   font-size: 16px;
   font-weight: 600;
 }
-.wood-photo {
-  background-image: url(/public/tree.jpg);
+.bottom-container-img {
+  background: #E7E4DD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wood-img {
+  background: url(/public/tree.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  padding: 100px;
+}
+.about-me {
+  flex: 1;
+  padding: 100px;
 }
