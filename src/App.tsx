@@ -3,6 +3,7 @@ import { Header }  from './components/Header';
 import { Baner } from './components/Baner';
 import './App.css';
 import { TextWithImage } from './components/TextWithImage'
+import { SocialInfo } from './components/SocialInfo';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header></Header>
       <Baner></Baner>
       <TextWithImage></TextWithImage>
+      <SocialInfo></SocialInfo>
     </>
   );
 }

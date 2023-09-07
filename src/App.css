@@ -10,6 +10,9 @@
   display: flex;
   gap: 56px;
 }
+.imgHeader {
+  background-color: aqua;
+}
 .background-img {
   background: url(/public/table.png);
   height: 690px;
@@ -38,16 +41,35 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: repeat(3, 300px); 
-  gap: 20px; 
+  gap: 20px;
+  align-items: center; 
+  justify-items: center;
+  padding: 50px;
 }
 .wood-img {
   background: url(/public/tree.jpg);
   height: 250px;
-  width: 250px;
+  width: 350px;
   background-size: cover;
   display: flex;
+  align-items: center;
 }
 .about-me {
   display: flex;
   align-items: center;
+}
+.socialInfo-container {
+  display: flex;
+  background: #E7E4DD;
+  border-top: 1px solid #3D3D3D;
+  border-bottom: 1px solid #3D3D3D;
+  letter-spacing: 1.5px;
+  padding: 50px;
+  gap: 10px;
+  flex-direction: column;
+}
+.socialInfo-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
