@@ -9,6 +9,7 @@
 .naviagtionHeader {
   display: flex;
   gap: 56px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .imgHeader {
   background-color: aqua;
@@ -75,4 +76,24 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.footer-container {
+  background: #E7E4DD;
+  display: block;
+  align-items: center; 
+  justify-content: center;
+  padding: 50px;
+}
+.socialInfo-iconsFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.navigation-footer {
+  display: flex;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  gap: 50px;
 }
