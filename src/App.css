@@ -6,11 +6,15 @@
   padding-right: 204px;
   background: #E7E4DD;
 }
-.naviagtionHeader {
+.navigationHeader {
   display: flex;
   gap: 56px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   cursor: pointer;
+}
+.navigationHeader a {
+  text-decoration: none;
+  color: black;
 }
 .imgHeader {
   background-color: aqua;

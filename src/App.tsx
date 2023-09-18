@@ -1,20 +1,17 @@
-import React from 'react';
-import { Header }  from './components/Header';
-import { Baner } from './components/Baner';
+
 import './App.css';
-import { TextWithImage } from './components/TextWithImage'
-import { SocialInfo } from './components/SocialInfo';
-import { Footer } from './components/Footer';
+import HomePage from './pages/HomePage';
+import { ProductPage } from './pages/ProductPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <Header></Header>
-      <Baner></Baner>
-      <TextWithImage></TextWithImage>
-      <SocialInfo></SocialInfo>
-      <Footer></Footer>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/product-page" element={<ProductPage/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
