@@ -1,9 +1,11 @@
+import { Button } from "./Button";
+
 function Baner ({tekstHeader, tekstParagraf}: {tekstHeader: string, tekstParagraf: string}) {
     return (
         <div className="background-img">
            <h2>{tekstHeader}</h2>
            <p>{tekstParagraf}</p>
-            <button className="button">Pokaż produkty</button>
+            <Button/>
         </div>
 
     )
