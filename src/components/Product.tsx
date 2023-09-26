@@ -1,12 +1,12 @@
 import { Button } from "./Button";
 
-function Product () {
+function Product ({price, name}:{price: string, name: string}) {
     return (
         <div className="product-page-container">
             <div className="product-container">
                 <img src="komoda.jpeg"/>
-                <h5>Komoda</h5>
-                <p> 5 000 zł</p>
+                <h5>{name}</h5>
+                <p>{price}</p>
                 <Button color={'black'}/>
             </div>
         </div>
