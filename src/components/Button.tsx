@@ -1,7 +1,7 @@
-function Button ({color}:{color?:string}) {
+function Button ({color, text}:{color?:string, text: string}) {
    
     return (
-        <button className={`button ${color === "black" ? "black" : ""}`}>Pokaż produkty</button>
+        <button className={`button ${color === "black" ? "black" : ""}`}>{text}</button>
     )
 }
 export { Button };

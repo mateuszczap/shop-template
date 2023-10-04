@@ -5,7 +5,7 @@ function Baner ({tekstHeader, tekstParagraf}: {tekstHeader: string, tekstParagra
         <div className="background-img">
            <h2>{tekstHeader}</h2>
            <p>{tekstParagraf}</p>
-            <Button/>
+            <Button text={'Pokaż produkty'}/>
         </div>
 
     )
