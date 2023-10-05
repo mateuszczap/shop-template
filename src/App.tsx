@@ -4,7 +4,8 @@ import HomePage from './pages/HomePage';
 import { ProductPage } from './pages/ProductPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ProductDescribe } from './components/ProductDescribe';
-import { useParams } from 'react-router-dom';
+import { AboutMe } from './components/AboutMe';
+
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/product-page" element={<ProductPage/>}/>
         <Route path="/product-page/:productName" element={<ProductDescribe/>}/>
+        <Route path="/about-me" element={<AboutMe/>}/>
       </Routes>
     </BrowserRouter>
   );

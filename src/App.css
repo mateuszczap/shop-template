@@ -142,6 +142,13 @@
   border-bottom: 1px solid #3D3D3D;
   padding-bottom: 20px;
 }
+.carousel {
+  max-width: 480px;
+}
+.carousel-img {
+  width: 480px;
+}
+
 .socialInfo-icons {
   display: flex;
   align-items: center;
