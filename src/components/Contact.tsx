@@ -1,13 +1,13 @@
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
-function AboutMe() {
+function Contact() {
     return(
         <>
         <Header/>
-        <div>O MNIE</div>
+        <div>KONTAKT</div>
         <Footer/>
         </>
     )
 }
-export { AboutMe }
+export { Contact };
