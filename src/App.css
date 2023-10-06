@@ -148,7 +148,22 @@
 .carousel-img {
   width: 480px;
 }
-
+.faq-element-container {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.faq-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
 .socialInfo-icons {
   display: flex;
   align-items: center;

@@ -12,7 +12,7 @@ function Header() {
             <NavLink to={'/about-me'}>O mnie</NavLink>
             <NavLink to={'/contact'}>Kontakt</NavLink>
             <NavLink to={'/faq'}>FAQ</NavLink>
-            <NavLink to={'/shop-basket'}>koszyk</NavLink>
+            <NavLink to={'/shop-basket'}>Koszyk</NavLink>
           </div>
           </header>
     );
