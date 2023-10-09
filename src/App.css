@@ -95,9 +95,9 @@
   gap: 10px;
   flex-direction: column;
 }
-.product-page-container {
-  /* background-color: #E7E4DD; */
-}
+/* .product-page-container {
+  background-color: #E7E4DD;
+} */
 .product-container {
   display: flex;
   flex-direction: column;
