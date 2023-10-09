@@ -9,12 +9,12 @@ function Faq() {
         <>
         <Header/>
         <div>
-            <div className="faq-questions">Najczęściej zadawane pytania (FAQ)
-                <FaqElement/>
-                <FaqElement/>
-                <FaqElement/>
-                <FaqElement/>
-                <FaqElement/>
+            <div className="faq-questions"><h3>Najczęściej zadawane pytania (FAQ)</h3>
+                <FaqElement question={"Zadajmy jakieś pytanie?1"} answer={"To jest moja odpowiedź"}/>
+                <FaqElement question={"Zadajmy jakieś pytanie?2"} answer={"To jest moja odpowiedź"}/>
+                <FaqElement question={"Zadajmy jakieś pytanie?3"} answer={"To jest moja odpowiedź"}/>
+                <FaqElement question={"Zadajmy jakieś pytanie?4"} answer={"To jest moja odpowiedź"}/>
+                <FaqElement question={"Zadajmy jakieś pytanie?5"} answer={"To jest moja odpowiedź"}/>
                 </div>
         </div>
         <Footer/>
