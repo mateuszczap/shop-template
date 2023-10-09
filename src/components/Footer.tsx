@@ -1,5 +1,6 @@
 import { InstaIcon } from './InstaIcon'
 import { FacebookIcon } from './FacebookIcon';
+import { footerData } from '../data/footerData';
 
 function Footer () {
     return (
@@ -10,10 +11,10 @@ function Footer () {
               <FacebookIcon></FacebookIcon>
             </div>
             <div className='navigation-footer'>
-                <p>REGULAMIN</p>
-                <p>POLITYKA PRYWATNOŚCI</p>
-                <p>KONTAKT</p>
-                <p>FAQ</p>
+                {footerData.map((name) => {
+                    return <p>{name}</p>
+                })}
+                
             </div>
         </div>
     )
