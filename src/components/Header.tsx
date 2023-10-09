@@ -1,5 +1,6 @@
 
 import { NavLink } from 'react-router-dom';
+import { headerData } from '../data/headerData';
 
 function Header() {
     return (
@@ -8,11 +9,9 @@ function Header() {
             <img src='/pecker-logo.png' width={100} height={100} className="imgHeader"/>
           </div>
           <div className="navigationHeader">
-            <NavLink to={'/product-page'}>Katalog Produktów</NavLink>
-            <NavLink to={'/about-me'}>O mnie</NavLink>
-            <NavLink to={'/contact'}>Kontakt</NavLink>
-            <NavLink to={'/faq'}>FAQ</NavLink>
-            <NavLink to={'/shop-basket'}>Koszyk</NavLink>
+            {headerData.map((item) => {
+              return <NavLink to={item.link}>{item.name}</NavLink>
+            })}
           </div>
           </header>
     );
