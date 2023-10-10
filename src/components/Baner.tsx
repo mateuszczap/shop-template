@@ -1,11 +1,18 @@
 import { Button } from "./Button";
+import { Link } from 'react-router-dom';
+// import { ProductPage } from "../pages/ProductPage";
+// import React from 'react';
+
 
 function Baner ({tekstHeader, tekstParagraf}: {tekstHeader: string, tekstParagraf: string}) {
     return (
         <div className="background-img">
            <h2>{tekstHeader}</h2>
            <p>{tekstParagraf}</p>
-            <Button text={'Pokaż produkty'}/>
+            <Link to="/product-page">
+                <Button text={'Katalog produktów'}/>
+            </Link>
+            
         </div>
 
     )
