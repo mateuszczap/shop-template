@@ -113,8 +113,6 @@
 .main-container-product-describe {
   display: flex;
   justify-content: space-evenly;
-  border-top: 1px solid #3D3D3D;
-  border-bottom: 1px solid #3D3D3D;
   padding: 100px;
   gap: 50px;
 }
