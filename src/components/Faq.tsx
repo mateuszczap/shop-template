@@ -5,14 +5,20 @@ import React, { useState } from 'react';
 import { faqData } from "../data/faq";
 
 function Faq() {
-    const [isOpen, setIsOpen] = useState(false)
+    const [currentFaqElement, setCurrentFaqElement] = useState<{zapytanie: string, odpowiedź: string}| undefined>(undefined)
+    console.log(currentFaqElement)
     return (
         <>
         <Header/>
         <div>
             <div className="faq-questions"><h3>Najczęściej zadawane pytania (FAQ)</h3>
             {faqData.map((faq) => {
-                return <FaqElement question={faq.zapytanie} answer={faq.odpowiedź}/>
+                return <FaqElement question={faq.zapytanie} answer={faq.odpowiedź} isOpen={currentFaqElement?.zapytanie===faq.zapytanie} 
+                setIsOpen={() => 
+                    {
+                        if(currentFaqElement?.zapytanie===faq.zapytanie){setCurrentFaqElement(undefined)
+                        return}
+                        setCurrentFaqElement(faq)}}/>
             })}
                 
               

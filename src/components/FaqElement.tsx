@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-function FaqElement({question, answer}:{question: string, answer: string}) {
-    const [isOpen, setIsOpen] = useState(false)
+function FaqElement({question, answer, isOpen, setIsOpen}:{question: string, answer: string, isOpen: boolean, setIsOpen: (isOpen: boolean) => void}) {
+    
     return(
         
         <div className="faq-element-container">
