@@ -23,7 +23,7 @@ function App() {
         <Route path="/about-me" element={<AboutMe/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/faq" element={<Faq/>}/>
-        <Route path="/shop-basket" element={<ShopBasket products={products}/>}/>
+        <Route path="/shop-basket" element={<ShopBasket products={products} setProducts={setProducts}/>}/>
       </Routes>
     </BrowserRouter>
   );
