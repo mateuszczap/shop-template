@@ -1,24 +1,56 @@
 import { Footer } from "./Footer";
 import { Header } from "./Header";
+import { ProductType } from "../data/products";
 
 
-function ShopBasket({products, setProducts}:{products:{name:string}[], setProducts: any}) {
-    //products
+function ShopBasket({products, setProducts}:{products: ProductType[], setProducts: any}) {
+    let price = 0 
+    let shipping = 20
+    console.log(price)
+    
+    products.forEach((product) => {
+        if(product.discount) {
+            price += product.discount
+        }
+        else {
+            price += product.price
+        }
+    })
+    
+    let tax = (price + shipping) * 0.23
+    let sum = price + shipping + tax
+
     return (
         <>
         <Header/>
-        <div>KOSZYK</div>
-        <div>{products.map((prod)=>{
-            //prod, products
-            return(
-                <div className="basket-container">
-                    <div>{prod.name}</div>
-                    <div onClick={() => setProducts(products.filter(product => prod !== product ))}>-</div>
-                </div>
-            )
-        })}</div>
+        <main className="main-basket-container">
+            <div>
+            <h3>TWÓJ KOSZYK</h3>
+            <div>{products.map((prod)=>{
+                //prod, products
+                return(
+                    <div className="basket-container">
+                        <div>{prod.name}</div>
+                        <div>{prod.price}zł</div>
+                        <div onClick={() => setProducts(products.filter(product => prod !== product ))}>-</div>
+                    </div>
+                )
+            })}</div>
+            </div>
+            <div className="summary-container">
+                <h3>PODSUMOWANIE</h3>
+                <p>Suma częściowa: {price} zł</p>
+                <p>Wysyłka: {shipping} zł</p>
+                <p>Podatek: {tax} zł</p>
+                <p>Kod promocyjny</p>
+                <input placeholder="wpisz kod"/>
+                <p>Suma końcowa: {sum.toFixed(2)} zł</p>
+            </div>
+        </main>
         <Footer/>
         </>
     )
 }
 export { ShopBasket };
+
+// obliczyć sumę: 

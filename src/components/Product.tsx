@@ -1,7 +1,7 @@
 import { Button } from "./Button";
 import { useNavigate } from "react-router-dom"
 
-function Product ({price, name, discount, setProducts}:{price: string, name: string, discount?: string, setProducts: any}) {
+function Product ({price, name, discount, setProducts}:{price: number, name: string, discount?: number, setProducts: any}) {
     const navigate = useNavigate()
     return (
         <div className="product-page-container" >

@@ -6,7 +6,7 @@ import { faqData } from "../data/faq";
 
 function Faq() {
     const [currentFaqElement, setCurrentFaqElement] = useState<{zapytanie: string, odpowiedź: string}| undefined>(undefined)
-    console.log(currentFaqElement)
+    
     return (
         <>
         <Header/>
