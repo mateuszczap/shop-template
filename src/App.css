@@ -60,6 +60,22 @@
 .button:hover {
   transform: scale(1.1);
 }
+.basket-button {
+  background-color: transparent;
+  color: #000000;
+  border:  2px ridge #000000;
+  padding: 16px 32px;
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: min-content;
+  white-space: nowrap;
+}
+.basket-button:hover {
+  transform: scale(0.8);
+}
 .bottom-container-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
@@ -96,12 +112,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 300px;
+  max-width: 250px;
+  min-height: 450px;
   align-items: center;
   gap: 10px;
   border: 1px solid #3D3D3D;
   border-radius: 5px;
   padding: 10px;
+}
+.product-container img {
+  max-width: 90%;
 }
 .product-tiles-container {
   display: flex;
@@ -192,6 +212,10 @@
   gap: 50px;
   cursor: pointer;
 }
+.navigation-footer a {
+  text-decoration: none;
+  color: black;
+}
 .basket-container {
   display: flex;
   align-items: center;
@@ -207,4 +231,8 @@
 .summary-contaner {
   display: flex;
   max-width: 400px;
+}
+a.active {
+  color: rgb(192, 66, 34);
+  text-decoration: underline;
 }

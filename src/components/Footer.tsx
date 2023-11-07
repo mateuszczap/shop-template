@@ -1,6 +1,7 @@
 import { InstaIcon } from './InstaIcon'
 import { FacebookIcon } from './FacebookIcon';
 import { footerData } from '../data/footerData';
+import { NavLink } from 'react-router-dom';
 
 function Footer () {
     return (
@@ -11,8 +12,8 @@ function Footer () {
               <FacebookIcon></FacebookIcon>
             </div>
             <div className='navigation-footer'>
-                {footerData.map((name) => {
-                    return <p>{name}</p>
+                {footerData.map((footerLink) => {
+                    return <NavLink to={footerLink.link}>{footerLink.name}</NavLink>
                 })}
                 
             </div>

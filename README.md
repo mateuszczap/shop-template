@@ -1,13 +1,11 @@
 do zrobienia:
 - zmień tło loga
-- aktywne guziki nawigacji ( jeśli jesteś na danej podstronie to podświetla nazwę tej podstrony)
 - stylizacja każdej podstrony wg standardów aplikacji
 - wstaw oficjalny teskt do strony głównej wraz ze zdjęciami
 - deployment na serwer
 - zrób porządek z kontenerami ikon mediów społecznościowych by każdy miał osobną swoją interakcję
 - stworzyć regulmamin i podłączyć do działania
-- stworzyć polityka prywatności i podłączyć do działania
-- podłącz kontakt i faq w footerze
+- stworzyć polityka prywatności, regulamin i podłączyć do działania
 - wystylizować kartę produktu wraz z aktualnymi zdjęciami ( zrób to w tablicy )
 - wystylizuj "O mnie" i dodaj tekst
 - wystylizuj "Kontakt" i dodaj tekst wraz z możliwością wysłania maila

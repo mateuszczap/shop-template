@@ -19,7 +19,7 @@ function ProductDescribe() {
             </div>
             <div className="inner-container-product-describe">
                 <h2>{productName}</h2>
-                <p>Cena: {array?.price}</p>
+                <p>Cena: {array?.price} zł</p>
                 {array?.discount && <p>Discount: {array?.discount}</p>}
                 <Button text={'Dodaj do koszyka'} color={'black'}/>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos temporibus aliquam architecto dolor molestias omnis nobis rem. Similique, tempore reiciendis! Similique quo perferendis voluptatibus. Ex, aut? Porro fugit molestias impedit!</p>
