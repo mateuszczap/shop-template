@@ -8,8 +8,10 @@ function Product ({price, name, discount, setProducts, img}:{price: number, name
             <div className="product-container">
                 <img src={img}/>
                 <h5>{name}</h5>
-                {discount ? <p><del>{price} zł</del>.</p> : <p>{price} zł</p> }
-                <p>{discount}</p>
+                {discount ? (<div>
+                <p><del>{price}</del> zł.</p>
+                <p>{discount} zł.</p>
+                </div>) : <p>{price} zł.</p> }
                 <Button  
                     onClick={() => {
                         navigate("/product-page" + "/" + name)

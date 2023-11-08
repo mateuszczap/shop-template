@@ -50,7 +50,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.3s ease;
-  width: min-content;
+  width: 100%;
   white-space: nowrap;
 }
 .black {
@@ -70,7 +70,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.3s ease;
-  width: min-content;
+  width: 100%;
   white-space: nowrap;
 }
 .basket-button:hover {
@@ -121,7 +121,8 @@
   padding: 10px;
 }
 .product-container img {
-  max-width: 90%;
+  max-width: 100%;
+  height: 300px;
 }
 .product-tiles-container {
   display: flex;
@@ -204,11 +205,18 @@
   padding: 50px;
   border-top: 1px solid #3D3D3D;
 }
-.socialInfo-iconsFooter {
+.scialInfo-container {
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+.scioalInfo-mainContainer {
+  display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
+}
+.socialInfo-iconsFooter {
   margin-bottom: 10px;
   cursor: pointer;
   transition: transform 0.3s ease;

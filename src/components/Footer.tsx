@@ -7,9 +7,13 @@ function Footer () {
     return (
     
         <div className='footer-container'>
-            <div className='socialInfo-iconsFooter'>
-              <InstaIcon></InstaIcon>
-              <FacebookIcon></FacebookIcon>
+            <div className='scioalInfo-mainContainer'>
+                <div className='socialInfo-iconsFooter'>
+                    <InstaIcon></InstaIcon>
+                </div>
+                <div className='socialInfo-iconsFooter'>
+                    <FacebookIcon></FacebookIcon>
+                </div>
             </div>
             <div className='navigation-footer'>
                 {footerData.map((footerLink) => {
