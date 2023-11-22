@@ -12,7 +12,7 @@ function ProductPage ({setProducts}: {setProducts: any}) {
             <Baner tekstHeader="Interesujemy się najwyższą jakością wykonania z najlepszych gatunków drzew." tekstParagraf="Drewno to niezwykły materiał, którego używa się od wieków do tworzenia pięknych i funkcjonalnych przedmiotów. Jego naturalna ciepło i tekstura dodają uroku każdemu otoczeniu. To materiał, który nie tylko inspiruje rzemieślników, ale także łączy nas z naturą, przypominając o naszych korzeniach."/>
             <div className="product-tiles-container">
                 {tablica.map((prod) => {
-                    return <Product img={prod.mainImage} price={prod.price} name={prod.name} discount={prod.discount} setProducts={setProducts}/>
+                    return <Product img={prod.mainImage} price={prod.price} name={prod.name} discount={prod.discount} setProducts={setProducts} mainImage={prod.mainImage} secondImage={prod.secondImage} thirdImage={prod.thirdImage}/>
                 }
                 )}
             </div>

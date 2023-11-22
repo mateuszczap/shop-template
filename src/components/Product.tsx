@@ -2,13 +2,15 @@ import { Button } from "./Button";
 import { useNavigate } from "react-router-dom"
 import { Carousel } from "./Carousel";
 
-function Product ({price, name, discount, setProducts, img}:{price: number, name: string, discount?: number, setProducts: any, img: string}) {
+function Product ({price, name, discount, setProducts, img, mainImage, secondImage, thirdImage}:{price: number, name: string, discount?: number, setProducts: any, img: string, mainImage: string, secondImage:string, thirdImage:string}) {
     const navigate = useNavigate()
     return (
         <div className="product-page-container" >
             <div className="product-container">
-                <img src={img}/>
-                {/* <Carousel/> */}
+                    <div className="product-carousel-img">
+                        <Carousel image={mainImage} secondImg={secondImage} thirdImg={thirdImage}/>
+                    </div>
+                
                 <h5>{name}</h5>
                 {discount ? (<div>
                 <p><del>{price}</del> zł.</p>
