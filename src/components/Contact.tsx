@@ -32,7 +32,7 @@ function Contact() {
                 <div className="email-text-container">
                     <div className="email-text">
                         <p>Treść maila</p>
-                        <input placeholder="Wpisz o co chcesz apytać." value={inputValue} onChange={handleInputChange}></input>
+                        <textarea placeholder="Wpisz o co chcesz apytać." value={inputValue} onChange={handleInputChange}></textarea>
                     </div>
                     <button className="button-email" onClick={async()=>{
                         const response = await fetch("http://localhost:3001/hello", {
