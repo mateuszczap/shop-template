@@ -1,14 +1,14 @@
 export const faqData = [
     {
-        zapytanie: 'Zadaj mi pytanie 353768',
-        odpowiedź: 'Odpowiadam Ci fujaro',   
+        zapytanie: 'Czy to jest lite drewno czy fornir?',
+        odpowiedź: 'Witam, meble wykonujemy tylko z litego drewna. Nie używamy materiałów drewnopochodnych jak fornir.',   
     },
     {
-        zapytanie: 'Zadaj mi pytanie ',
-        odpowiedź: 'Odpowiadam Ci fujaro',   
+        zapytanie: 'W jaki sposób odbywa się transport mebli?',
+        odpowiedź: 'Witam, korzystamy z zewnętrznej, zaprzyjaźnionej firmy transportowej w której cenie zawarta jest usługa wnoszenia oraz montażu mebli u klienta.',   
     },
     {
-        zapytanie: 'Zadaj mi pytanie sfgndtty',
-        odpowiedź: 'Odpowiadam Ci fujaro',   
+        zapytanie: 'Czy można zamówić mebel lakierowany?',
+        odpowiedź: 'Witam, oczywiście oprócz standardowego wykończenia olejem za dodatkową opłatą wykonujemy lakieroweanie mebli lakierem bezbarwnym oraz w dowolnym kolorze RAL na życzenie klienta.',   
     },
 ]
