@@ -76,6 +76,18 @@
 .basket-button:hover {
   transform: scale(0.8);
 }
+.button-email {
+  background-color: transparent;
+  color: #000000;
+  border:  2px ridge #000000;
+  padding: 16px 32px;
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  white-space: nowrap;
+}
 .bottom-container-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
@@ -254,4 +266,14 @@
 a.active {
   color: rgb(192, 66, 34);
   text-decoration: underline;
+}
+.contact-container {
+  padding: 50px;
+}
+.email-input-container {
+  margin-top: 20px;
+  
+}
+.email-text-container {
+  margin-top: 20px;
 }
