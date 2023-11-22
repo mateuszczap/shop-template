@@ -2,7 +2,7 @@ import { Button } from "./Button";
 import { useNavigate } from "react-router-dom"
 import { Carousel } from "./Carousel";
 
-function Product ({price, name, discount, setProducts, img, mainImage, secondImage, thirdImage}:{price: number, name: string, discount?: number, setProducts: any, img: string, mainImage: string, secondImage:string, thirdImage:string}) {
+function Product ({price, name, discount, setProducts, mainImage, secondImage, thirdImage}:{price: number, name: string, discount?: number, setProducts: any, img: string, mainImage: string, secondImage:string, thirdImage:string}) {
     const navigate = useNavigate()
     return (
         <div className="product-page-container" >
