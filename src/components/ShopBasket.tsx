@@ -5,7 +5,7 @@ import { ProductType } from "../data/products";
 
 function ShopBasket({products, setProducts}:{products: ProductType[], setProducts: any}) {
     let price = 0 
-    let shipping = 20
+    let shipping = 100 * products.length
     console.log(price)
     
     products.forEach((product) => {
@@ -17,8 +17,8 @@ function ShopBasket({products, setProducts}:{products: ProductType[], setProduct
         }
     })
     
-    let tax = (price + shipping) * 0.23
-    let sum = price + shipping + tax
+    // let tax = (price + shipping) * 0.23
+    let sum = price + shipping
 
     return (
         <>
@@ -39,12 +39,12 @@ function ShopBasket({products, setProducts}:{products: ProductType[], setProduct
             </div>
             <div className="summary-container">
                 <h3>PODSUMOWANIE</h3>
-                <p>Suma częściowa: {price} zł</p>
+                <p>Suma produktów: {price} zł</p>
                 <p>Wysyłka: {shipping} zł</p>
-                <p>Podatek: {tax} zł</p>
+                {/* <p>Podatek: {tax} zł</p> */}
                 <p>Kod promocyjny</p>
                 <input placeholder="wpisz kod"/>
-                <p>Suma końcowa: {sum.toFixed(2)} zł</p>
+                <p>Suma końcowa: {price > 0 ? sum.toFixed(2) : 0} zł</p>
             </div>
         </main>
         <Footer/>

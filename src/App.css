@@ -261,14 +261,17 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 10px;
+  gap: 10px;
 }
 .main-basket-container {
   display: flex;
   justify-content: space-evenly;
 }
-.summary-contaner {
+.summary-container {
   display: flex;
+  flex-direction: column;
   max-width: 400px;
+  gap: 10px;
 }
 a.active {
   color: rgb(192, 66, 34);
