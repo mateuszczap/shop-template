@@ -1,12 +1,14 @@
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { ProductType } from "../data/products";
+import { Carousel } from "./Carousel";
+import { Button } from "./Button";
+import { ButtonIcon } from "./ButtonIcon";
 
 
 function ShopBasket({products, setProducts}:{products: ProductType[], setProducts: any}) {
     let price = 0 
     let shipping = 100 * products.length
-    console.log(price)
     
     products.forEach((product) => {
         if(product.discount) {
@@ -27,12 +29,27 @@ function ShopBasket({products, setProducts}:{products: ProductType[], setProduct
             <div>
             <h3>TWÓJ KOSZYK</h3>
             <div>{products.map((prod)=>{
-                //prod, products
+            const newAddedProducts = products.map((addProd) => {
+                if (
+                    addProd !== prod
+                ) return addProd
+                
+                return {...addProd, quantity:(addProd.quantity||0) + 1}
+            })
+            const minusAddedProducts = products.map((minusProd) => {
+                if (
+                    minusProd !== prod
+                ) return minusProd
+                return {...minusProd, quantity:(minusProd.quantity||0) - 1}
+            })
                 return(
                     <div className="basket-container">
+                        <img src={prod.mainImage} width={100} height={100}/>
                         <div>{prod.name}</div>
-                        <div>{prod.price}zł</div>
-                        <div onClick={() => setProducts(products.filter(product => prod !== product ))}>-</div>
+                        <div>{prod.price} zł</div>
+                        <ButtonIcon onClick={() => setProducts(newAddedProducts)}>+</ButtonIcon>
+                        <div>{prod.quantity} szt</div>
+                        <ButtonIcon onClick={() => prod.quantity == 1? setProducts(products.filter(product => prod !== product )):setProducts(minusAddedProducts)}>-</ButtonIcon>
                     </div>
                 )
             })}</div>

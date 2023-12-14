@@ -24,7 +24,7 @@ function Product ({price, name, discount, setProducts, mainImage, secondImage, t
                     text={'Pokaż produkt'}
                     />
                 <button onClick={() => {
-                    setProducts((arr:any)  => [...arr, {price, discount, name}])
+                    setProducts((arr:any)  => [...arr, {price, discount, name, mainImage, secondImage, thirdImage, quantity:1}])
                     
                 }} className="basket-button">Dodaj do koszyka</button>
             </div>

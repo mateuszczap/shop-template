@@ -10,7 +10,7 @@ function Carousel({image, secondImg, thirdImg}:{image: string, secondImg: string
         <img src={thirdImg} role="presentation" className="carousel-img"/>,
         // <img src="/komoda4.jpg" role="presentation" className="carousel-img"/>,
     ];
-    const [currentImage, setCurrentImage] = useState(0);
+   
     
     return(
         <div className="carousel">

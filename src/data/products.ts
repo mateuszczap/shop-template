@@ -1,4 +1,4 @@
-export type ProductType = {name: string, price: number, discount?: number, mainImage: string, secondImage:string, thirdImage:string}
+export type ProductType = {quantity?: number, name: string, price: number, discount?: number, mainImage: string, secondImage:string, thirdImage:string}
 
 export const tablica: ProductType[] = [
     {
