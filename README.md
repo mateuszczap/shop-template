@@ -10,7 +10,4 @@ do zrobienia:
 
 
 Dodawanie produktu:
-- Na przycisk "+" za każde kliknięcie zwiększa we właściwości quantity o jeden więcej.
-- Na przycisk "-" usuwa produkt ale tylko jeśli jest minimum jeden produkt w koszyku.
-Usuwanie polega na odfiltrowaniu elementu z tablicy. Jeśli jest powyżej jeden to zmniejszam właściwość quantity o 1.
 - wyświetl ilość obecnego stanu produktów w koszyku za pomoca quantity.

@@ -7,15 +7,15 @@ import { ButtonIcon } from "./ButtonIcon";
 
 
 function ShopBasket({products, setProducts}:{products: ProductType[], setProducts: any}) {
-    let price = 0 
+    let price = 0
     let shipping = 100 * products.length
     
     products.forEach((product) => {
         if(product.discount) {
-            price += product.discount
+            price += product.discount * (product.quantity || 1);
         }
         else {
-            price += product.price
+            price += product.price * (product.quantity || 1);
         }
     })
     
@@ -48,7 +48,7 @@ function ShopBasket({products, setProducts}:{products: ProductType[], setProduct
                         <div>{prod.name}</div>
                         <div>{prod.price} zł</div>
                         <ButtonIcon onClick={() => setProducts(newAddedProducts)}>+</ButtonIcon>
-                        <div>{prod.quantity} szt</div>
+                        <div>{prod.quantity} szt.</div>
                         <ButtonIcon onClick={() => prod.quantity == 1? setProducts(products.filter(product => prod !== product )):setProducts(minusAddedProducts)}>-</ButtonIcon>
                     </div>
                 )
