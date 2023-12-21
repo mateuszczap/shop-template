@@ -24,7 +24,10 @@ function Product ({price, name, discount, setProducts, mainImage, secondImage, t
                     text={'Pokaż produkt'}
                     />
                 <button onClick={() => {
-                    setProducts((arr:any)  => [...arr, {price, discount, name, mainImage, secondImage, thirdImage, quantity:1}])
+                    setProducts((arr:any)  => {
+                        const newProducts = [...arr, {price, discount, name, mainImage, secondImage, thirdImage, quantity:1}]
+                        localStorage.setItem('products', JSON.stringify(newProducts))
+                        return newProducts })
                     
                 }} className="basket-button">Dodaj do koszyka</button>
             </div>
@@ -32,3 +35,5 @@ function Product ({price, name, discount, setProducts, mainImage, secondImage, t
     )
 }
 export { Product };
+
+// localStorage.setItem('products', JSON.stringify(newProducts))

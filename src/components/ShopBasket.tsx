@@ -4,6 +4,8 @@ import { ProductType } from "../data/products";
 import { Carousel } from "./Carousel";
 import { Button } from "./Button";
 import { ButtonIcon } from "./ButtonIcon";
+import { PlusIcon } from "./PlusIcon";
+import { MinusIcon } from "./MinusIcon";
 
 
 function ShopBasket({products, setProducts}:{products: ProductType[], setProducts: any}) {
@@ -19,7 +21,7 @@ function ShopBasket({products, setProducts}:{products: ProductType[], setProduct
         }
     })
     
-    // let tax = (price + shipping) * 0.23
+    
     let sum = price + shipping
 
     return (
@@ -47,9 +49,14 @@ function ShopBasket({products, setProducts}:{products: ProductType[], setProduct
                         <img src={prod.mainImage} width={100} height={100}/>
                         <div>{prod.name}</div>
                         <div>{prod.price} zł</div>
-                        <ButtonIcon onClick={() => setProducts(newAddedProducts)}>+</ButtonIcon>
+                        <ButtonIcon onClick={() => {
+                            localStorage.setItem('products', JSON.stringify(newAddedProducts))
+                            setProducts(newAddedProducts)}}><PlusIcon/></ButtonIcon>
                         <div>{prod.quantity} szt.</div>
-                        <ButtonIcon onClick={() => prod.quantity == 1? setProducts(products.filter(product => prod !== product )):setProducts(minusAddedProducts)}>-</ButtonIcon>
+                        <ButtonIcon onClick={() => {
+                            const newProducts = prod.quantity == 1? products.filter(product => prod !== product ):minusAddedProducts
+                            localStorage.setItem('products', JSON.stringify(newProducts))
+                            setProducts(newProducts)}}><MinusIcon/></ButtonIcon>
                     </div>
                 )
             })}</div>

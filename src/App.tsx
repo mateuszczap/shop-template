@@ -10,9 +10,10 @@ import { Faq } from './components/Faq';
 import { ShopBasket } from './components/ShopBasket';
 import { useState } from 'react';
 
+const initialState = JSON.parse(localStorage.getItem('products')||'[]');
 
 function App() {
-  const [products, setProducts] = useState([]) 
+  const [products, setProducts] = useState(initialState) 
   
   return (
     <BrowserRouter>

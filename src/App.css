@@ -254,13 +254,16 @@
   color: black;
 }
 .basket-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 20px 70px 20px;
+  justify-items: center;
   align-items: center;
-  justify-content: space-between;
-  max-width: 400px;
   margin: 0 auto;
   padding: 10px;
   gap: 10px;
+}
+.basket-container img {
+  border: 1px solid black;
 }
 .main-basket-container {
   display: flex;
@@ -269,7 +272,6 @@
 .summary-container {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
   gap: 10px;
 }
 a.active {
@@ -303,4 +305,10 @@ a.active {
   width: 400px;
   height: 100px;
   padding: 5px;
+}
+.buttonIcon {
+  display: flex;
+  border-radius: 0px;
+  border: 1px solid black;
+  background-color: transparent;
 }
